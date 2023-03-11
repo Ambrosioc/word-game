@@ -7,7 +7,6 @@ function GuessInput({ handleGuessSubmit }) {
 		event.preventDefault();
 		setTentativeGuess("");
 		handleGuessSubmit(tentativeGuess);
-		console.log({ tentativeGuess });
 	}
 
 	return (
