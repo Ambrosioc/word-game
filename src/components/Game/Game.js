@@ -9,6 +9,7 @@ import LoseBanner from "../LoseBanner/LoseBanner";
 import { NUM_OF_GUESSES_ALLOWED } from "../../constants";
 import Kayboard from "../Kayboard/Kayboard";
 import { checkGuess } from "../../game-helpers";
+import InfoGame from "../InfoGame/InfoGame";
 
 function Game() {
 	const [gameStatus, setGameStatus] = React.useState("running");
@@ -44,6 +45,7 @@ function Game() {
 
 	return (
 		<>
+			<InfoGame />
 			<GuessResults
 				guesses={guesses}
 				answer={answer}
