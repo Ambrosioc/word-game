@@ -31,11 +31,6 @@ function Game() {
 		}
 	}
 
-	function handleRestart() {
-		setGameStatus("running");
-		setGuesses([]);
-	}
-
 	function handleStart() {
 		const newAnswer = sample(WORDS);
 		setGameStatus("running");
@@ -60,7 +55,7 @@ function Game() {
 				<WinBanner guessesCount={guessesCount} action={handleStart} />
 			)}
 			{gameStatus === "lose" && (
-				<LoseBanner answer={answer} action={handleRestart} />
+				<LoseBanner answer={answer} action={handleStart} />
 			)}
 		</>
 	);

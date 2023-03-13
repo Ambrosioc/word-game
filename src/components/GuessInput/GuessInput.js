@@ -26,6 +26,7 @@ function GuessInput({ handleGuessSubmit, gameStatus }) {
 					setTentativeGuess(event.target.value.toUpperCase());
 				}}
 			/>
+			{/* <button disabled={gameStatus !== "running"}>Envoyer</button> */}
 		</form>
 	);
 }

@@ -3,9 +3,9 @@ import Banner from "../Banner/Banner";
 
 function LoseBanner({ answer, action }) {
 	return (
-		<Banner status="sad" action={action} actionText="Recommancer">
+		<Banner status="sad" action={action} actionText="Retentez votre chance">
 			<p>
-				Désoler, la bonne réponse est <strong>{answer}</strong>.
+				Dommage, la bonne réponse est <strong>{answer}</strong>.
 			</p>
 		</Banner>
 	);
