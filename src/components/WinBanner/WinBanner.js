@@ -1,9 +1,9 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 
-function WinBanner({ guessesCount }) {
+function WinBanner({ guessesCount, action }) {
 	return (
-		<Banner status="happy">
+		<Banner status="happy" actionText="Nouvelle partie" action={action}>
 			<p>
 				<strong>Félicitaion ! </strong>Vous avez gagnier en{" "}
 				<strong>
