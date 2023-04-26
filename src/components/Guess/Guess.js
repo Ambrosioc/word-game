@@ -2,6 +2,7 @@ import React from "react";
 import { range } from "../../utils";
 
 const Cell = ({ letter, status }) => {
+	console.log("Cell", letter, status);
 	return <span className={`cell ${status}`}>{letter}</span>;
 };
 function Guess({ value }) {
